@@ -1,0 +1,22 @@
+android:
+  config: 
+    "dynatrace {
+      configurations {
+        defaultConfig {
+          autoStart{
+            applicationId 'Your Application ID'
+            beaconUrl 'Your Beacon URL'
+          }
+          userOptIn true
+        }
+      }
+    }"
+  
+ios:
+  config: 
+    "<key>DTXApplicationID</key>
+    <string>Your Application ID</string>
+    <key>DTXBeaconURL</key>
+    <string>Your Beacon URL</string>
+    <key>DTXUserOptIn</key>
+    <true/>"
